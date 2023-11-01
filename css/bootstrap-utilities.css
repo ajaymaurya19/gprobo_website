@@ -647,6 +647,7 @@
 .p-5 {
   padding: 3rem !important; }
 
+
 .px-0 {
   padding-right: 0 !important;
   padding-left: 0 !important; }
@@ -748,6 +749,8 @@
 
 .pb-5 {
   padding-bottom: 3rem !important; }
+  .pb-6 {
+    padding-bottom: 7rem !important; }
 
 .pl-0 {
   padding-left: 0 !important; }
