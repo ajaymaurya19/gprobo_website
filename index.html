@@ -35,7 +35,31 @@
 	</div>
 
 	<nav class="site-nav">
-		<div class="container">
+		
+			<a href="index.html" class="logo m-0 float-start mx-3"><img src="images/logoOf.png" alt=""  height="38rem">.<span class="text-primary"></span> </a>
+			<div class="container">
+				
+				<div class="site-navigation">
+					<!-- <a href="index.html" class="logo m-0 float-start">GProbo<span class="text-primary">.</span> </a> -->
+	
+					<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
+						<li class="active"><a href="index.html">Home</a></li>
+						
+						<li><a href="products.html">Products</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="https://forms.gle/i2iWM1XTqu75UVoT8" target="_blank"> Career</a></li>
+					</ul>
+	
+					
+	
+					<a href="#" class="burger ml-auto float-end site-menu-toggle light js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+						<span></span>
+					</a>
+				</div>
+			</div>
+		
+		<!-- <div class="container">
 			<div class="site-navigation">
 				<a href="index.html" class="logo m-0 float-start">GProbo<span class="text-primary">.</span> </a>
 
@@ -57,14 +81,17 @@
 				</ul>
 
 			</div>
-		</div>
+		</div> -->
 	</nav>
 
 	<div class="hero-2 overlay">
 		<div class="container">
 			<div class="row align-items-center">
+
 				<div class="col-lg-10 mx-auto">
-					<h1 class="mb-9"><span class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Creating general purpose robot that benefits to all the humanity</span> </h1>
+		
+					<!-- <h1 class="mb-9" style="font-size: 1.5rem;"><span class="display-6 fw-bold text-body-emphasis lh-1 mb-4">Creating a general-purpose robot that benefits all of humanity</span></h1> -->
+
 				
 					<!-- <div class="play-vid">
 						<a href="" class="play glightbox">
@@ -83,7 +110,14 @@
 
 
 	<div class="section sec-1">
+		<div class="text-center">
+			<h2 class="heading text-center">Home</h2>
+		</div>
+		
 		<div class="container">
+			<div class="background-image-div">
+				<img src="images/robov2.png" alt="Background Image" class="background-img">
+			</div>
 			<div class="row g-0">
 				<div class="col-lg-7">
 					<h2 class="heading">Creating the world a better place with robots</h2>
@@ -91,13 +125,17 @@
 
 				</div>
 				<div class="col-lg-5 ms-auto">
-					<img src="images/robo_.png" alt="Image" class="img-fluid img-r" width="270">
+					<img src="images/robo_.png" alt="Image" class="img-fluid img-r" width="300">
+					<!-- <img src="images/robo_.png" alt="Image" class="img-fluid img-r" height="200px"> -->
+					<!-- <div style="width: 100%; height: 700px; background-image: url('images/robo_.png'); background-size: cover; background-position: center;"></div> -->
+
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="section sec-5">
+		
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-lg-6">
@@ -169,7 +207,7 @@
 				<div class="item">
 					<div class="testimonial-item">
 						<div  class="testimonial-item-inner">
-							<div class="testimonial-author mb-5">
+							<div class="testimonial-author">
 								<img src="images/img_01.jpeg" alt="Image" class="img-fluid">
 								<strong class="d-block">Second Prize </strong>
 								<span>Oscillations - April, 2023 </span>
@@ -186,7 +224,7 @@
 				<div class="item">
 					<div class="testimonial-item">
 						<div  class="testimonial-item-inner">
-							<div class="testimonial-author mb-5">
+							<div class="testimonial-author">
 								<img src="images/img_02.jpeg" alt="Image" class="img-fluid">
 								<strong class="d-block">Selected in TOP 100</strong>
 								<span>Feb, 2023</span>
@@ -202,7 +240,7 @@
 				<div class="item" >
 					<div class="testimonial-item" >
 						<div  class="testimonial-item-inner"> <!--Add image Here-->
-							<div class="testimonial-author mb-5">
+							<div class="testimonial-author">
 								<img src="images/img_03.jpeg" alt="Image" class="img-fluid">
 								<strong class="d-block">First Price</strong>
 								<span>Feb, 2023</span>
@@ -312,5 +350,20 @@
 	<script src="js/navbar.js"></script>
 	<script src="js/counter.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="particle.js"></script>
+	<script src="app.js"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+	<script>
+		var images = ['images/r2.jpg', 'images/robov2.png']; // Replace with your image paths
+		var currentIndex = 0;
+		var backgroundImg = document.querySelector('.background-image-div .background-img');
+		
+		function changeBackgroundImage() {
+		  backgroundImg.src = images[currentIndex];
+		  currentIndex = (currentIndex + 1) % images.length;
+		}
+		
+		setInterval(changeBackgroundImage, 1500); // Change image every 3 seconds
+		</script>
 </body>
 </html>

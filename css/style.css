@@ -13,6 +13,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -6212,6 +6213,8 @@ textarea.form-control-lg {
 .pb-5 {
   padding-bottom: 3rem !important; }
 
+.pb-7 {
+    padding-bottom: 7rem !important; }
 .ps-0 {
   padding-left: 0 !important; }
 
@@ -6321,7 +6324,9 @@ textarea.form-control-lg {
   color: #6c757d !important; }
 
 .text-black-50 {
-  color: rgba(0, 0, 0, 0.5) !important; }
+  color:black !important;
+  font-size: medium;
+}
 
 .text-white-50 {
   color: rgba(255, 255, 255, 0.5) !important; }
@@ -8648,8 +8653,8 @@ textarea.form-control-lg {
   width: 100%; }
 
 .site-nav {
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding: 8px 0;
+   }
   .site-nav h1, .site-nav .h1 {
     margin: 0;
     padding: 0;
@@ -8659,7 +8664,7 @@ textarea.form-control-lg {
     .site-nav .site-navigation .site-menu > li {
       display: inline-block; }
       .site-nav .site-navigation .site-menu > li > a {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px 15px;
         display: inline-block;
         text-decoration: none !important;
@@ -9094,14 +9099,15 @@ a {
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0);
+    background: #323a42;
     z-index: 1; }
   .hero-2 > .container {
     position: relative;
     z-index: 2; }
   .hero-2, .hero-2 > .container > .row {
-    height: 100vh;
-    min-height: 670px; }
+    height: 6.5vh;
+    /* min-height: 670px; */
+   }
   .hero-2 h1, .hero-2 .h1 {
     font-size: 50px;
     color: #fff;
@@ -9147,7 +9153,7 @@ a {
   margin-bottom: 10px; }
 
 .sec-1 .heading {
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
   font-weight: bold;
   position: relative;
   display: inline-block; }
@@ -9159,7 +9165,7 @@ a {
     content: "";
     position: absolute;
     height: 1px;
-    width: 300%;
+    width: 100%;
     background: #000;
     right: 0;
     bottom: 0; }
@@ -9172,7 +9178,7 @@ a {
       right: auto !important; } }
 
 .section {
-  padding: 7rem 0; }
+  padding-top: 1.6rem; }
   .section .heading {
     font-size: 40px;
     font-weight: bold;
@@ -9292,7 +9298,7 @@ a {
         background: #fc5404; }
 
 .sec-4 .heading, .sec-5 .heading, .sec-news .heading {
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
   font-weight: bold;
   position: relative;
   display: inline-block; }
@@ -9303,15 +9309,16 @@ a {
     content: "";
     position: absolute;
     height: 1px;
-    width: 300%;
+    width: 100%;
     background: #000;
     right: 0;
     bottom: 0; }
 
 .testimonial-item {
+  /* width: 70%; */
   text-align: center; }
   .testimonial-item .testimonial-item-inner {
-    padding: 50px 30px;
+    padding: 10px 0;
     background: #fff;
     border-radius: 10px;
     -webkit-transition: .3s all ease;
@@ -9325,11 +9332,11 @@ a {
     font-size: 18px;
     font-style: italic;
     color: #777;
-    margin-bottom: 30px; }
+    }
   .testimonial-item .testimonial-author {
     text-anchor: center; }
     .testimonial-item .testimonial-author img {
-      width: 80px;
+      width: 250px;
       margin: 0 auto 20px auto;
       border-radius: 50%; }
     .testimonial-item .testimonial-author strong {
@@ -9788,7 +9795,6 @@ a {
 
 .site-footer {
   padding-top: 70px;
-  padding-bottom: 30px;
   font-size: 14px; }
   @media (max-width: 767.98px) {
     .site-footer {
@@ -9800,7 +9806,7 @@ a {
   .site-footer .widget {
     margin-bottom: 30px; }
     .site-footer .widget h3, .site-footer .widget .h3 {
-      font-size: 16px;
+      font-size: 22px;
       font-weight: 700;
       margin-bottom: 30px; }
     .site-footer .widget .social li {
@@ -9833,8 +9839,8 @@ a {
           color: #fc5404; }
   .site-footer .copyright {
     position: relative;
-    padding-top: 40px;
-    margin-top: 40px; }
+    padding-top: 10px;
+    }
     .site-footer .copyright:before {
       top: 0;
       position: absolute;
@@ -9846,3 +9852,88 @@ a {
 #tagLine1{
   font-size: large;
 }
+
+.bordered-paragraph {
+  border: 2px solid #000; /* You can adjust the border width and color */
+  padding: 10px; /* Add some padding to make it look better */
+}
+
+.person {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.person:hover {
+  transform: scale(1.1);
+}
+.person img {
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.person:hover img {
+  transform: scale(1.2);
+}
+.social-2 li {
+  display: inline-block;
+  margin: 5px;
+}
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translate3d(0, 20px, 0);
+  }
+  to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+.background-image-div {
+  /* margin-top: 15px; */
+  margin-bottom: 46px;
+  position: relative;
+  width: 100%;
+  height: 745px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.background-image-div .background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* filter: blur(3px); Adjust the blur intensity as needed */
+  /* z-index: -1; */
+}
+
+.background-image-div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba((0, 255, 255,0.5) */
+  /* Adjust the color and opacity as needed */
+}
+/* .img-fluid {
+  border-radius: 2%;
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.1);
+} */
+
