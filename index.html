@@ -36,7 +36,11 @@
 
 	<nav class="site-nav">
 		
-			<a href="index.html" class="logo m-0 float-start mx-3"><img src="images/logoOf.png" alt=""  height="38rem">.<span class="text-primary"></span> </a>
+		<!-- <img src="images/logoOf.png" alt="" height="38rem">
+		<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; background: rgba(0, 0, 0, 0.5); padding: 10px;">
+			Your Text Here
+		</div> -->
+			<a href="index.html" class="logo m-0 float-start mx-3"><img src="images/logoOf.png" alt=""  height="38rem"><span class="text-primary"></span> </a>
 			<div class="container">
 				
 				<div class="site-navigation">
@@ -45,10 +49,10 @@
 					<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
 						<li class="active"><a href="index.html">Home</a></li>
 						
-						<li><a href="products.html">Products</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-						<li><a href="https://forms.gle/i2iWM1XTqu75UVoT8" target="_blank"> Career</a></li>
+						<li class="active"><a href="products.html">Products</a></li>
+						<li class="active"><a href="about.html">About</a></li>
+						<li class="active"><a href="contact.html">Contact Us</a></li>
+						<li class="active"><a href="https://forms.gle/i2iWM1XTqu75UVoT8" target="_blank"> Career</a></li>
 					</ul>
 	
 					
@@ -110,9 +114,9 @@
 
 
 	<div class="section sec-1">
-		<div class="text-center">
+		<!-- <div class="text-center">
 			<h2 class="heading text-center">Home</h2>
-		</div>
+		</div> -->
 		
 		<div class="container">
 			<div class="background-image-div">
@@ -121,7 +125,7 @@
 			<div class="row g-0">
 				<div class="col-lg-7">
 					<h2 class="heading">Creating the world a better place with robots</h2>
-					<p id="tagLine1">We are passionate about pushing the boundaries of robotics and Artificial intelligence and improve the way we live and work. As a Techies we provider of cutting-edge robotic solutions, we strive to harness the power of technology to create safe, intelligent, and reliable robotic systems.</p>
+					<p id="tagLine1" style="text-align: center;">We are passionate about pushing the boundaries of robotics and Artificial intelligence and improve the way we live and work. As a Techies we provider of cutting-edge robotic solutions, we strive to harness the power of technology to create safe, intelligent, and reliable robotic systems.</p>
 
 				</div>
 				<div class="col-lg-5 ms-auto">
@@ -354,7 +358,7 @@
 	<script src="app.js"></script>
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script>
-		var images = ['images/r2.jpg', 'images/robov2.png']; // Replace with your image paths
+		var images = ['images/robov2.png']; // Replace with your image paths
 		var currentIndex = 0;
 		var backgroundImg = document.querySelector('.background-image-div .background-img');
 		
